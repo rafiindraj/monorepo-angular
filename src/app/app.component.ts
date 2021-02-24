@@ -15,7 +15,6 @@ export class AppComponent implements OnInit {
   emitroute : string = '';
   switchapp(valueEmitted : any) {
     this.emitroute = valueEmitted;
-    console.log(this.emitroute)
   }
 
   ngOnInit() {

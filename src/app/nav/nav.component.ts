@@ -10,7 +10,7 @@ export class NavComponent implements OnInit {
   @Output() mainroute: any;
 
   constructor() { }
-  getapproute(approute : string){
+  setapproute(approute : string){
     this.approute.emit(approute)
   }
 
