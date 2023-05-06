@@ -6,12 +6,13 @@ import { App2SharedModule } from 'projects/app2/src/app/app.module';
 const routes: Routes = [
   {
     path: 'app1',
-    loadChildren: '../../projects/app1/src/app/app.module#App1SharedModule'
+    loadChildren: () => import('../../projects/app1/src/app/app.module').then(m => m.App1SharedModule)
   },
   {
     path: 'app2',
-    loadChildren: '../../projects/app2/src/app/app.module#App2SharedModule'
+    loadChildren: () => import('../../projects/app2/src/app/app.module').then(m => m.App2SharedModule)
   },
+  // { path: '', loadChildren: () => import('./layouts/layouts.module').then(m => m.LayoutsModule) },
   // { path: '**', redirectTo: '/app1/one' }
 ];
 
@@ -23,4 +24,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { }

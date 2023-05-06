@@ -1,5 +1,4 @@
-import { ModuleWithProviders } from '@angular/compiler/src/core';
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -29,7 +28,7 @@ export class AppModule { }
 @NgModule({
 })
 export class App1SharedModule{
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<any> {
     return {
       ngModule: AppModule,
       providers: providers,
