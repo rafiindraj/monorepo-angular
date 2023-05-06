@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'multi-app';
+  title = 'adminapp';
   mainroute = true
   constructor() {
   }

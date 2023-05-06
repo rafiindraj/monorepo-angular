@@ -1,6 +1,6 @@
 {
-  "name": "multi-app",
-  "short_name": "multi-app",
+  "name": "adminapp",
+  "short_name": "adminapp",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
