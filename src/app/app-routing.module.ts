@@ -12,6 +12,7 @@ const routes: Routes = [
     path: 'app2',
     loadChildren: () => import('../../projects/app2/src/app/app.module').then(m => m.App2SharedModule)
   },
+  { path: 'layouts', loadChildren: () => import('./layouts/layouts.module').then(m => m.LayoutsModule) },
   // { path: '', loadChildren: () => import('./layouts/layouts.module').then(m => m.LayoutsModule) },
   // { path: '**', redirectTo: '/app1/one' }
 ];
