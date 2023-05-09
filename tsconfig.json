@@ -11,6 +11,9 @@
     "paths": {
       "lib": [
         "dist/lib"
+      ],
+      "ui-lib": [
+        "dist/ui-lib"
       ]
     },
     "sourceMap": true,

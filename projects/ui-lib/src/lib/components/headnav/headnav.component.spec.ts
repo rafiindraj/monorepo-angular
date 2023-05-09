@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LibComponent } from './lib.component';
+import { HeadnavComponent } from './headnav.component';
 
-describe('LibComponent', () => {
-  let component: LibComponent;
-  let fixture: ComponentFixture<LibComponent>;
+describe('HeadnavComponent', () => {
+  let component: HeadnavComponent;
+  let fixture: ComponentFixture<HeadnavComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LibComponent ]
+      declarations: [ HeadnavComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LibComponent);
+    fixture = TestBed.createComponent(HeadnavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

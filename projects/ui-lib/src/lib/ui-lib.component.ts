@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-lib',
+  selector: 'lib-ui-lib',
   template: `
     <p>
-      lib works!
+      ui-lib works!
     </p>
   `,
   styles: [
   ]
 })
-export class LibComponent implements OnInit {
+export class UiLibComponent implements OnInit {
 
   constructor() { }
 
